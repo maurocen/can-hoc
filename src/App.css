@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
 }
 
 .App-logo {
@@ -19,9 +22,50 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-top: 100px;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
+  flex-grow: 1;
+}
+
+select {
+  width: 200px;
+  height: 40px;
+  background: #000022;
+  appearance: none;
+  border: 1px solid white;;
+  border-radius: 4px;
+  color: white;
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+.menu {
+  width: 150px;
+  background: #000022;
+  color: white;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu img {
+  width: 130px;
+  margin: 0 0 20px;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+.menu__item {
+  display: block;
+  color: white;
+  text-decoration: none;
+
+}
+
+.unauthorized {
+  color: red;
 }
 
 .App-link {
